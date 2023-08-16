@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header.jsx';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         <div>
           <header>
-            <h1>Color Battle</h1>
+           <Header />
           </header>
         </div>
       </header>
