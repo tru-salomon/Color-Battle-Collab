@@ -1,18 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header.jsx';
 
 function App() {
+
+  const layer1 = {
+    name: "Me",
+    color: "orchid",
+    hitpoints: 100,
+    turn: true,
+  };
+
+  const player2 = {
+    name: "You",
+    color: "cornflowerblue",
+    hitpoints: 100,
+    turn: false,
+  };
+
+  let dice = 0;
+
+  let player1Turn = true;
+
+
   return (
-    <div className="App">
+    <>
       <header className="App-header">
-        <div>
-          <header>
            <Header />
-          </header>
-        </div>
       </header>
-    </div>
+      <>
+        <section className='Player'>
+          <h2>{player.name}</h2>
+          <h3>Hitpoints: {player.hitpoints}</h3>
+          <button> Attack! </button>
+        </section>
+      </>
+    </>
   );
 }
 
