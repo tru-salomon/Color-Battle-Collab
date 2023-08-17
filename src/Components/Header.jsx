@@ -1,9 +1,9 @@
+import "../Components/Header.css"
+
 function Header(){
 
     return(<>
      <h1>Color Battle</h1>
-
-     
     </>)
 }
 
