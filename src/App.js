@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './components/Header.jsx';
-
+import Header from './Components/Header.jsx';
+import GameBoardCard from './Components/GameBoardCard.jsx';
 function App() {
 
-  const layer1 = {
+  const player1 = {
     name: "Me",
     color: "orchid",
     hitpoints: 100,
@@ -27,13 +27,11 @@ function App() {
       <header className="App-header">
            <Header />
       </header>
-      <>
-        <section className='Player'>
-          <h2>{player.name}</h2>
-          <h3>Hitpoints: {player.hitpoints}</h3>
-          <button> Attack! </button>
-        </section>
-      </>
+      <body>
+     < GameBoardCard
+      player={player1}
+      player2={player2} />
+      </body>
     </>
   );
 }
